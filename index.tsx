@@ -1,10 +1,10 @@
-import { Text, View, StyleSheet } from "react-native";
-import { Image } from "expo-image"
-import { Ionicons } from "@expo/vector-icons"
+import { Ionicons } from "@expo/vector-icons";
+import { Image } from "expo-image";
+import { StyleSheet, Text, View } from "react-native";
 
 // npm install expo-image (usar este código no terminal)
 
-const foto = require("../assets/images/hello.jpg")
+const foto = require("../../assets/images/react-logo.png")
 
 export default function Index() {
   return (
@@ -14,18 +14,18 @@ export default function Index() {
       </View>
       <View style = {styles.containerConteudo}>
         <View style = {styles.containerNome}>
-          <Text style={styles.nome}>Tarcyane Cardoso Anjos</Text>
+          <Text style={styles.nome}>Fulano da Silva</Text>
         </View>
         <Text style = {styles.linha}>
           _______________________________________
         </Text>
         <View style = {styles.containerDados}>
-          <Ionicons name="person" size={16} color="white" />
-          <Text style = {styles.textoDados}>16anos</Text>
+          <Ionicons name="person" size={24} color="white" />
+          <Text style = {styles.textoDados}>25 anos</Text>
         </View>
         <View style = {styles.containerDados}>
           <Ionicons name="mail" size={24} color="white" />
-          <Text style = {styles.textoDados}>tarcyane@escola.pr.gov.br</Text>
+          <Text style = {styles.textoDados}>fulanosilva@escola.pr.gov.br</Text>
         </View>
         <View style = {styles.containerDados}>
           <Ionicons name="call" size={24} color="white" />
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "pink"
+    backgroundColor: "grey"
   },
   containerImg: {
     flex: 1,
